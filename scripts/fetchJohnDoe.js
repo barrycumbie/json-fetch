@@ -12,6 +12,7 @@ function jget() {
         })
         .then((response) => {
             console.log(response);
+            console.log(response.name); 
         })
 
     // (C) HANDLE ERROR
