@@ -25,15 +25,31 @@
     <div class="container-fluid">
 
         <div class="row">
-            <div class="col-md-5 offset-md-2">
+            <div class="col-md-5 offset-md-1">
                 <div class="card">
                     <h2 class="card-title">Load the JSON Data</h2>
                     <div class="card-body">
                         Data are in a separate file (.json) on the same server
-                        <button id="btnLoadData" class="btn btn-secondary">load json</button>
+                        <button id="btnLoadDataLocal" class="btn btn-secondary">load local json in console</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-5">
+           
+                 <div class="card">
+                    <h2 class="card-title">Load the JSON Data</h2>
+                    <div class="card-body">
+                        Data are in a file (.json) on a different serveer server
+                        <button id="btnLoadDataServer" class="btn btn-secondary">load internet json in DOM</button>
                     </div>
                 </div>
+              </div>
             </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <span id="dataContainer"></span>
+          </div>
         </div>
 
 
@@ -45,8 +61,8 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-    <!-- <script src="scripts/india.js"></script> -->
-    <script src="scripts/fetchJohnDoe.js"></script>
+    <script src="scripts/fetchServer.js"></script>
+    <script src="scripts/fetchLocal.js"></script>
 
 </body>
 
